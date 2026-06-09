@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(213, 179, 108, 0.12), transparent 35%),
+    radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.04), transparent 16%),
+    linear-gradient(180deg, #090503 0%, #140c0a 40%, #0c0605 100%);
+  color: #f0e4d8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.bg-glass {
+  background: rgba(18, 11, 8, 0.72);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(24px);
+}
+
+.steam-puff {
+  position: absolute;
+  left: 50%;
+  top: -26px;
+  width: 20px;
+  height: 64px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 50% 30%, rgba(240, 228, 216, 0.8), rgba(240, 228, 216, 0));
+  filter: blur(1px);
+  animation: steam 4s ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes steam {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0) scale(0.9);
+  }
+  40% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -72px) scale(1.15);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+.scroll-indicator {
+  animation: float 3s ease-in-out infinite;
+}
+
+.motion-float {
+  animation: float 7s ease-in-out infinite;
+}
+
+::selection {
+  background: rgba(213, 179, 108, 0.35);
+  color: #fff;
+}
