@@ -1,4 +1,4 @@
-coffe-ritual
+## coffe-ritual
 
 A modern coffee shop and e-commerce website that allows users to explore coffee products, browse featured collections, learn about brewing experiences, and place orders through an interactive and responsive interface. Designed with a clean UI, smooth animations, and mobile-friendly navigation.
 
