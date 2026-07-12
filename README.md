@@ -55,26 +55,39 @@ npm run preview
 
 ## Project Structure
 
+
+
 ```text
-coffee-ritual-ecommerce/
+agenticnex-business-website/
+├── public/
+│   └── favicon.svg
+│
+├── src/
+│   ├── components/
+│   ├── assets/
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── index.css
+│   └── vite-env.d.ts
+│
+├── .gitignore
+├── README.md
 ├── index.html
 ├── package.json
-├── vite.config.js
-├── public/
-│   └── assets/
-├── src/
-│   ├── main.jsx
-│   ├── App.jsx
-│   ├── index.css
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Hero.jsx
-│   │   ├── Products.jsx
-│   │   ├── About.jsx
-│   │   ├── Contact.jsx
-│   │   └── Footer.jsx
-│   └── assets/
-└── README.md
+├── package-lock.json
+├── tailwind.config.js
+├── postcss.config.js
+├── tsconfig.json
+├── tsconfig.node.json
+├── vite.config.ts
+│
+├── ezgif-frame-001.jpg
+├── ezgif-frame-002.jpg
+├── ezgif-frame-003.jpg
+├── ezgif-frame-004.jpg
+├── ...
+└── ezgif-frame-270.jpg
+
 ```
 
 ## Technologies Used
